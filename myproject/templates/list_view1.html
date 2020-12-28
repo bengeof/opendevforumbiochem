@@ -1,0 +1,19 @@
+<div class="main"> 
+    
+    {% for data1 in dataset1 %}. 
+        <form method="POST">
+        {% csrf_token %}
+         {{ data1.name }}<br/> 
+        {{ data1.description }}<br/> 
+        <label for="moderator">moderator</label>
+        <input type="text" id="moderator" name="moderator">
+
+        <button type="submit">Submit</button>
+        </form>
+        <hr/> 
+  
+        {% endfor %} 
+  
+</div> 
+
+
